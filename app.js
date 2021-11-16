@@ -2,10 +2,13 @@ const express = require('express');
 const app = express()
 
 // Set where we want to port our site
-app.listen(3000);
+app.listen(8080);
 
 // To use ejs we use this
 app.set('view engine', 'ejs');
+
+// To use static files
+app.use(express.static('public'));
 
 // home page
 app.get('/', (req, res) => {
@@ -18,7 +21,7 @@ app.get('/about', (req, res) => {
 })
 
 // contact page
-app.get('/contact', (req, res) => {
+app.get('/contact-me', (req, res) => {
     res.render('contact', { title: 'Contact' });
 })
 

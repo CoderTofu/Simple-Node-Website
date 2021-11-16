@@ -1,0 +1,89 @@
+ @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    border-bottom: 1px solid gray;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+}
+
+.title h1 {
+    font-size: 50px;
+    color: #000;
+}
+
+header a {
+    text-decoration: none;
+}
+
+/* nav */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    list-style: none;
+}
+
+.nav li {
+    margin-left: 1rem;
+}
+
+.nav li a {
+    font-size: 1.5rem;
+    color: #010101;
+}
+
+/* main */
+main {
+    margin: 1rem;
+    width: 100%;
+}
+
+main .logo {
+    display: block;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 36px;
+    margin: 10px;
+}
+
+main p {
+    text-indent: 50px;
+    margin-top: 1rem;
+}
+
+main h3 {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+
+/* footer */
+footer {
+    margin: 1rem 0 1rem 0;
+    padding: 1rem;
+    color: rgb(19, 19, 19);
+}
