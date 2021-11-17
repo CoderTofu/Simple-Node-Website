@@ -80,10 +80,40 @@ main h3 {
     font-size: 24px;
 }
 
-
 /* footer */
 footer {
     margin: 1rem 0 1rem 0;
     padding: 1rem;
     color: rgb(19, 19, 19);
+}
+
+@media (max-width: 1200px) {
+    .nav li {
+        padding-right: .5rem;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .title h1 {
+        font-size: 30px;
+        color: #000;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        display: none;
+    }
+
+    .nav {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .nav li {
+        margin: 0;
+    }
+
+    
 }
